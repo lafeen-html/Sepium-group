@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medium</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@500;600&family=PT+Sans+Caption&display=swap"
+    rel="stylesheet">
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #F5F5F4;
+  }
+
+  .header>div>p {
+    font-size: 14px;
+    color: #787878;
+  }
+
+  h1 {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 64px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  .card {
+    border-radius: 15px;
+  }
+
+  .card>img {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .carousel-icon:active {
+    opacity: 1;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev,
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    opacity: 1;
+  }
+
+  .carousel-icon {
+    padding: 0.5rem 0.5rem;
+    background: #ffffff;
+    border-radius: 50%;
+    color: black;
+    position: absolute;
+    border: 0.7rem solid #F5F5F4;
+  }
+
+  .carousel-icon:hover {
+    background: #c7cdda;
+    opacity: 1;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 0%;
+  }
+
+  .btn {
+    font-size: 14px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  .btn:hover {
+    background-color: #def5a5;
+  }
+
+  .btn-kp {
+    background-color: #9CC91C;
+    color: #ffffff;
+  }
+
+  .btn-detailed {
+    background-color: #F5F5F4;
+    color: #787878;
+  }
+</style>
+
+<body>
+  <div class="container">
+
+    <div class="row my-5 header">
+      <div class="col-4">
+        <p>Мы разработали более 300 проектов<br>магазинов под ключ по всей стране.<br>Начиная от
+          маленьких<br>минимаркетов,
+          заканчивая большими<br>универсамами.</p>
+      </div>
+      <div class="col-8">
+        <h1>Реализованные проекты магазинов</h1>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row row-cols-3">
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image1.jpg" class="card-img-top" alt="Image1">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">«Супермаркет под ключ» — комплексная поставка и монтаж оборудования
+                      </h5>
+                      <h6 class="card-subtitle text-body-secondary">г. Владикавказ</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image2.jpg" class="card-img-top" alt="Image2">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">Проект «Магазин бытовой химии и косметики под ключ»</h5>
+                      <h6 class="card-subtitle text-body-secondary">г. Химки</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image3.jpg" class="card-img-top" alt="Image3">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">«Супермаркет самообслуживания ХОРОШИЙ под ключ», комплексная поставка,
+                        монтаж и сервис</h5>
+                      <h6 class="card-subtitle text-body-secondary">Дагестан, г. Избербаш</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row row-cols-3">
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image1.jpg" class="card-img-top" alt="Image1">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">«Супермаркет под ключ» — комплексная поставка и монтаж оборудования
+                      </h5>
+                      <h6 class="card-subtitle text-body-secondary">г. Владикавказ</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image2.jpg" class="card-img-top" alt="Image2">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">Проект «Магазин бытовой химии и косметики под ключ»</h5>
+                      <h6 class="card-subtitle text-body-secondary">г. Химки</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image3.jpg" class="card-img-top" alt="Image3">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">«Супермаркет самообслуживания ХОРОШИЙ под ключ», комплексная поставка,
+                        монтаж и сервис</h5>
+                      <h6 class="card-subtitle text-body-secondary">Дагестан, г. Избербаш</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="row row-cols-3">
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image1.jpg" class="card-img-top" alt="Image1">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">«Супермаркет под ключ» — комплексная поставка и монтаж оборудования
+                      </h5>
+                      <h6 class="card-subtitle text-body-secondary">г. Владикавказ</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image2.jpg" class="card-img-top" alt="Image2">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">Проект «Магазин бытовой химии и косметики под ключ»</h5>
+                      <h6 class="card-subtitle text-body-secondary">г. Химки</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="../images/medium/medium-image3.jpg" class="card-img-top" alt="Image3">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">«Супермаркет самообслуживания ХОРОШИЙ под ключ», комплексная поставка,
+                        монтаж и сервис</h5>
+                      <h6 class="card-subtitle text-body-secondary">Дагестан, г. Избербаш</h6>
+                      <div class="row">
+                        <div class="col">
+                          <a href="#" class="btn btn-kp">Получить КП
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="#" class="btn btn-detailed">Подробнее
+                            <span class="material-icons pass" aria-hidden="true">chevron_right</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="material-icons pass carousel-icon" aria-hidden="true">chevron_left</span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="material-icons pass carousel-icon" aria-hidden="true">chevron_right</span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
